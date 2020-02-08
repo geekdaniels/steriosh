@@ -119,6 +119,15 @@ form {
     padding: 0 50px;
     height: 100%;
     text-align: center;
+
+    
+    @include respond(misc2) {
+        padding:2rem;
+     }
+
+     @include respond(phone) {
+        padding:4rem;
+     }
 }
 
 input {

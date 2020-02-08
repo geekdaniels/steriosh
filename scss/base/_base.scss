@@ -12,6 +12,14 @@
     position: relative;
     overflow: hidden;
     position: relative;
+
+    @include respond(misc2) {
+       height:90%;
+     }
+
+     @include respond(phone) {
+       height:70vh;
+     }
 }
 
 
@@ -30,7 +38,7 @@
     &.active {
         z-index:-1;
         opacity:0;
-        animation: swap 1.5s ease-in-out;
+        animation: swap 1s ease-in-out;
     }
 }
 
@@ -45,10 +53,18 @@
     top:0;
     left:0;
 
+    @include respond(misc2) {
+       flex-direction: column;
+    }
+
     .form-container,
     .overlay {
         flex-basis:50%;
-        transition: all 1.5s ease-in-out;
+        transition: all 1s ease-in-out;
+
+        @include respond(misc2) {
+            flex-basis:100%;
+         }
     }
 
     .overlay {
@@ -61,6 +77,14 @@
         color: #ffffff;
         @include flexCenter;
         flex-direction:column;
+
+        @include respond(misc2) {
+            padding:2rem;
+         }
+
+         @include respond(phone) {
+            padding:3rem;
+         }
 
         h1 {
             text-align: center;
