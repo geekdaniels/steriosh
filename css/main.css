@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  letter-spacing: 0.5rem;
+  margin: 2rem .3rem;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #333;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin: 1.5rem 0;
+}
+
+.icon {
+  color: #ff4b2b;
+}
+
+button {
+  border-radius: 2rem;
+  border: .1rem solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1.2rem 4.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 80ms ease-in-out;
+  transition: -webkit-transform 80ms ease-in-out;
+  transition: transform 80ms ease-in-out;
+  transition: transform 80ms ease-in-out, -webkit-transform 80ms ease-in-out;
+}
+
+button:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(to left, #ff416c, #ff4b2b);
+  border-color: #ffffff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+form {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 80%;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+
+.signin.active {
+  -webkit-transform: translateX(210%);
+          transform: translateX(210%);
+}
+
+.sign-up-container {
+  z-index: 1;
+}
+
+.sign-in-container {
+  z-index: 2;
+}
+
+.sign-in-container.active {
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation: swap 1.5s ease-in-out;
+          animation: swap 1.5s ease-in-out;
+}
+
+.sign-up-container,
+.sign-in-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sign-up-container .form-container,
+.sign-up-container .overlay,
+.sign-in-container .form-container,
+.sign-in-container .overlay {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.sign-up-container .overlay,
+.sign-in-container .overlay {
+  background: #ff416c;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4b2b), to(#ff416c));
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sign-up-container .overlay h1,
+.sign-in-container .overlay h1 {
+  text-align: center;
+}
+
+.sign-up-container .overlay p,
+.sign-in-container .overlay p {
+  text-align: center;
+  width: 60%;
+}
+
+.sign-up-container .overlay button,
+.sign-in-container .overlay button {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.sign-up-container .overlay button:hover,
+.sign-in-container .overlay button:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(to left, #ff416c, #ff4b2b);
+  border-color: #ffffff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sign-up-container .overlay__signup.active,
+.sign-in-container .overlay__signup.active {
+  -webkit-transform: translateX(-210%);
+          transform: translateX(-210%);
+}
+
+@-webkit-keyframes swap {
+  0% {
+    z-index: 2;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+@keyframes swap {
+  0% {
+    z-index: 2;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
