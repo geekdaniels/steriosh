@@ -10,12 +10,21 @@
         color:$dark_grey;
         font-size:1rem;
         font-weight:500;
+
+        @include respond(misc2) {
+            font-size:1.5rem;
+        }
     }
 
     h6 {
         font-size:1.4rem;
         color:$black;
+
+        @include respond(misc2) {
+            font-size:1.9rem;
+        }
     }
+
 
     &__clients {
         flex-basis:60%;
@@ -145,6 +154,10 @@
                         color:$dark_grey;
                         font-size:1rem;
                         font-weight:500;
+
+                        @include respond(misc2) {
+                            font-size:1.5rem;
+                        }
                     }
                 }
             }

@@ -389,9 +389,21 @@ li {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 43.75em) {
+  .footer p {
+    font-size: 1.5rem;
+  }
+}
+
 .footer h6 {
   font-size: 1.4rem;
   color: #000000;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .footer h6 {
+    font-size: 1.9rem;
+  }
 }
 
 .footer__clients {
@@ -569,6 +581,12 @@ li {
   color: #999999;
   font-size: 1rem;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .footer__links__website ul li a {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 43.75em) {
