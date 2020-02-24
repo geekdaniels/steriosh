@@ -1,133 +1,60 @@
+// .misc {
+//     height:80%;
+//     width:80%;
+//     background-color: red;
+//     border-radius:1rem;
+//     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+//     position: relative;
+//     overflow: hidden;
+//     position: relative;
+
+//     @include respond(misc2) {
+//        height:90%;
+//        background-color: green;
+//      }
+
+//      @include respond(phone) {
+//        height:70vh;
+//        background-color: yellow;
+//      }
+// }
+
 .main {
-    @include flexCenter;
-    height:100vh;
+    //min-height:100vh;
+    background-color: $base;
+    font-family: Ubuntu, sans-serif;
+    padding-left:5rem;
+    padding-right:5rem;
 }
 
-.container {
-    height:80%;
-    width:80%;
-    background-color: #ffffff;
-    border-radius:1rem;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    position: relative;
-    overflow: hidden;
-    position: relative;
+a {
+    text-decoration:none;
+    font-family: Ubuntu, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 
-    @include respond(misc2) {
-       height:90%;
-     }
-
-     @include respond(phone) {
-       height:70vh;
-     }
-}
-
-
-
-.signin.active  {
-    transform: translateX(210%);
-}
-
-.sign-up-container {
-    z-index:1;
-}
-
-.sign-in-container {
-    z-index:2;
-
-    &.active {
-        z-index:-1;
-        opacity:0;
-        animation: swap 1s ease-in-out;
-    }
-}
-
-
-
-.sign-up-container,
-.sign-in-container {
-    display:flex;
-    height:100%;
-    width:100%;
-    position: absolute;
-    top:0;
-    left:0;
-
-    @include respond(misc2) {
-       flex-direction: column;
+    &:hover {
+        text-decoration:none;
     }
 
-    .form-container,
-    .overlay {
-        flex-basis:50%;
-        transition: all 1s ease-in-out;
+}
 
-        @include respond(misc2) {
-            flex-basis:100%;
-         }
-    }
-
-    .overlay {
-        background: #ff416c;
-        background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-        background: linear-gradient(to right, #ff4b2b, #ff416c);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0 0;
-        color: #ffffff;
-        @include flexCenter;
-        flex-direction:column;
-
-        @include respond(misc2) {
-            padding:2rem;
-         }
-
-         @include respond(phone) {
-            padding:3rem;
-         }
-
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            text-align:center;
-            width:60%;
-        }
-
-        button {
-            transition:all .2s;
-
-            &:hover {
-                background: linear-gradient(to left,#ff416c,  #ff4b2b);
-                border-color: #ffffff;
-                transform:scale(1.2);
-            }
-        }
-
-        &__signup.active {
-            transform: translateX(-210%);
-        }
-    }
-    
+li {
+    list-style:none;
 }
 
 
-// .signin.active  {
-//     transform: translateX(210%);
-// }
-
-// .overlay__signup.active  {
-//     transform: translateX(-210%);
-// }
-
-
-// .sign-in-container.active {
-//      z-index:-1;
-//     opacity:0;
-//     animation: swap 1.5s ease-in-out;
-// }
-
+.btn {
+        background:$main;
+        box-shadow: 0px 8px 32px rgba(0, 53, 107, 0.2);
+        border-radius: 50px;
+        padding:1rem 3rem 1rem 3rem;;
+        color:$base;
+        font-weight: 500;
+        font-size: 1.8rem;
+}
 
 
 @keyframes swap {
