@@ -2,6 +2,10 @@
     height:20vh;
     display: flex;
 
+    @include respond(tab-port) {
+        flex-wrap:wrap;
+    }
+
     p {
         color:$dark_grey;
         font-size:1rem;
@@ -17,17 +21,35 @@
         flex-basis:60%;
         @include flexCenter;
 
+        @include respond(tab-port) {
+            flex-basis:100%;
+            margin-bottom:1rem;
+        }
+
 
         ul {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
+            @include respond(misc2) {
+               flex-direction:column;
+               
+             }
+
             li {
                  margin-left:2rem;
                  position:relative;
                  cursor: pointer;
                  transition:all .2s;
+
+                 @include respond(tab-port) {
+                    margin-left: 1rem;
+                 }
+
+                 @include respond(misc2) {
+                   margin-bottom:2rem;
+                  }
 
                  .testimonial {
                     box-shadow: 0px 8px 32px rgba(0, 53, 107, 0.2);
@@ -101,7 +123,22 @@
         padding:2rem;
         justify-content: space-between;
 
+        @include respond(misc2) {
+           align-items: center;
+        }
+
+        @include respond(phone) {
+            flex-direction:column;
+          }
+
+
         &__website {
+
+            @include respond(misc2) {
+                text-align: center;
+                margin-bottom:1rem;
+             }
+
             ul {
                 li {
                     a {
@@ -115,11 +152,17 @@
         }
 
         &__contact {
-
+            @include respond(misc2) {
+               text-align: center;
+               margin-bottom:1rem;
+              }
         }
 
         &__terms {
-
+            @include respond(misc2) {
+               text-align: center;
+               margin-bottom:1rem;
+              }
         }
     }
 }

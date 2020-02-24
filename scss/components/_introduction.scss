@@ -7,10 +7,16 @@
     padding-bottom:7rem;
     margin-top:7rem;
 
-    // background-color: red;
+     @include respond(tab-port) {
+      flex-wrap: wrap;
+    }
 
     &__content {
         flex-basis:40%;
+
+        @include respond(tab-port) {
+           flex-basis:100%;
+        }
 
         &__icon {
             width:80%;
@@ -33,52 +39,89 @@
             width:40%;
             margin-top:5rem;
             display:flex;
-            justify-content:space-between;         
+            justify-content:space-between;   
+            
+            @include respond(misc2) {
+               width:60%;
+              }
         }
     }
 
     &__links {
-        ul {
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height:40vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis:25%;
 
-            li {
-                span {
-                    background-color: red;
-                    width: 10px;
-                    height: 20px;
+        @include respond(tab-port) {
+            flex-basis:100%;
+            margin-top:2rem;
+         }
+
+
+        &__item {
+            display:flex;;
+            justify-content: flex-end;
+            align-items:center;
+            margin-bottom:3rem;
+
+            @include respond(tab-port) {
+               justify-content: space-between;
+             }
+
+            a {
+                margin-right:3rem;
+                color:$dark_grey;
+                transition:all .2s;
+                font-weight:500;
+
+                &:hover {
+                  color:$main;
+                  font-weight:700;
                 }
 
-                a {
-                    color:$dark_grey;
-
-                    &:hover {
-                        color:$main;
-                    }
-
-                    span {
-                        background-color: red;
-                        width: 10px;
-                        height: 20px;
-                    }
-
-                    // &::before {
-                    //     content: "";
-                    //     position: absolute;
-                    //     width: 10px;
-                    //     height: 20px;
-                    //     border-radius;
-                    //     background-color:red; 
-                    //     transition: 0.4s ease-out; 
-                    //     right:2rem;
-                    // }
-
-                    
+                &:hover + .introduction__links__item-icon,
+                &:hover + .introduction__links__item-icon::after {
+                    background-color:$main;
                 }
-               
+
+                &:hover + .introduction__links__item-icon .introduction__links__item-icon-circle  {
+                    background-color:$main;
+                }
+            }
+
+            &-icon  {
+                width: 2.6rem;
+                height:2.6rem;
+                background-color:$grey;
+                border-radius:50%;
+                @include flexCenter;
+                position:relative;
+                transition:all .2s;
+
+                &-circle {
+                    width: 2rem;
+                    height:2rem;
+                    background-color:$grey;
+                    border:4px solid $base;
+                    border-radius:50%;
+                    transition:all .2s;
+                }
+
+                
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 1px;
+                        height: 2rem;
+                        background-color:$grey;
+                        bottom:0;
+                        transform: rotate(180deg);
+                        transform-origin:bottom;
+                        transition:all .2s;
+                    }
             }
         }
+
     }
 }
