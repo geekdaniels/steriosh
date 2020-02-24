@@ -6,6 +6,7 @@
 
 
     &__icon {
+    
 
         img {
            
@@ -34,10 +35,11 @@
                             color:$base;
                             font-weight: 500;
                             font-size: 1.8rem;
+                            transition:all .2s;
                         }
 
                         &:hover {
-
+                            background-color:rgba(0, 53, 107, 0.7);
                         } 
                 }                           
         }

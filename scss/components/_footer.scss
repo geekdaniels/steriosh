@@ -1,0 +1,125 @@
+.footer {
+    height:20vh;
+    display: flex;
+
+    p {
+        color:$dark_grey;
+        font-size:1rem;
+        font-weight:500;
+    }
+
+    h6 {
+        font-size:1.4rem;
+        color:$black;
+    }
+
+    &__clients {
+        flex-basis:60%;
+        @include flexCenter;
+
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                 margin-left:2rem;
+                 position:relative;
+                 cursor: pointer;
+                 transition:all .2s;
+
+                 .testimonial {
+                    box-shadow: 0px 8px 32px rgba(0, 53, 107, 0.2);
+                     background-color:$base;
+                     position: absolute;
+                     top:-20rem;
+                     left:-5rem;
+                     width:25rem;
+                     transition:all .2s;
+                     visibility: hidden;
+                    display:flex;
+                    flex-direction:column;
+                    align-items: flex-start;
+                    padding:1rem 2rem;
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 0; 
+                        height: 0; 
+                        transition: 0.4s ease-out; 
+                        left:5rem;
+                        bottom:-1rem;
+                        border-left: 20px solid transparent;
+                        border-right: 20px solid transparent;
+                        border-top: 20px solid $base;
+                    }
+
+
+                    &__image{
+                        width:4rem;
+                        height:4rem;
+                        margin-bottom:1rem;
+        
+                        img {
+                            border-radius:50%;
+                            height:100%;
+                            width:100%;
+                        }
+                    }
+
+                    h6 {
+                        margin-bottom:1rem;
+
+                    }
+                    p {
+                        margin-bottom:1rem;
+                    }
+
+                    h5 {
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        line-height: 1.4rem;
+                        border-left: 2px solid $main;
+                        padding-left:1rem;
+                    }
+                 }
+
+                 &:hover .testimonial {
+                     visibility: visible;
+                 }
+            }
+        }
+    }
+
+    &__links {
+        flex-grow:1;
+        display: flex;
+        background-color: $grey;
+        padding:2rem;
+        justify-content: space-between;
+
+        &__website {
+            ul {
+                li {
+                    a {
+                        color:$dark_grey;
+                        font-size:1rem;
+                        font-weight:500;
+                    }
+                }
+            }
+
+        }
+
+        &__contact {
+
+        }
+
+        &__terms {
+
+        }
+    }
+}
