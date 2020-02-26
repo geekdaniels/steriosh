@@ -1,5 +1,5 @@
 .main {
-    min-height:100vh;
+    min-height:80vh;
     background-color: $base;
     font-family: Ubuntu, sans-serif;
     padding-left:10rem;
@@ -9,8 +9,9 @@
       url("../../images/Ellipse\ 13.svg"),
       url("../../images/Ellipse\ 12.svg") ;
     background-repeat: no-repeat;
-    background-size:100% 45%,
-      100% 55%;
+    background-size:
+      100% 45rem,
+      100% 55rem;
 
     @include respond(tab-port) {
         padding-left:7rem;
@@ -48,10 +49,13 @@ li {
         transition:all .2s;
 
         &:hover {
-            background-color:rgba(0, 53, 107, 0.7);
+            background-color:rgb(11, 37, 63);
         } 
 }
 
+#notice {
+    background-color:$link_item;
+}
 
 @keyframes swap {
     0% {

@@ -1,6 +1,7 @@
 .footer {
     height:20vh;
     display: flex;
+    margin:0;
 
     @include respond(tab-port) {
         flex-wrap:wrap;
@@ -27,27 +28,46 @@
 
 
     &__clients {
-        flex-basis:60%;
-        @include flexCenter;
+        flex-basis:65%;
+        display:flex;
+        align-items: center;
+        padding-left:10rem;
 
         @include respond(tab-port) {
             flex-basis:100%;
             margin-bottom:1rem;
         }
 
+        &__holder {
+            width:100%;
+            height:4rem;
+            @include flexCenter;
+            justify-content: flex-start;
+            
+            img {
+               width:auto;
+               height:100%;
+               object-fit: cover;
+            }
+        }
 
         ul {
+            flex-basis:100%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
 
             @include respond(misc2) {
                flex-direction:column;
-               
              }
 
             li {
-                 margin-left:2rem;
+                flex-grow:1;
+                // background-color: yellowgreen;
+
+                &:not(:last-child) {
+                   margin-right:2rem;
+                }
+
                  position:relative;
                  cursor: pointer;
                  transition:all .2s;
@@ -69,10 +89,10 @@
                      width:25rem;
                      transition:all .2s;
                      visibility: hidden;
-                    display:flex;
-                    flex-direction:column;
-                    align-items: flex-start;
-                    padding:1rem 2rem;
+                     display:flex;
+                     flex-direction:column;
+                     align-items: flex-start;
+                     padding:1rem 2rem;
 
                     &::before,
                     &::after {
@@ -127,6 +147,7 @@
 
     &__links {
         flex-grow:1;
+        flex-basis:auto;
         display: flex;
         background-color: $grey;
         padding:2rem;
