@@ -65,7 +65,7 @@ body {
   padding-right: 10rem;
   background-image: url("../../images/Ellipse 13.svg"), url("../../images/Ellipse 12.svg");
   background-repeat: no-repeat;
-  background-size: 100% 45rem, 100% 55rem;
+  background-size: 100% 35rem, 100% 55rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -246,12 +246,12 @@ li {
 }
 
 .introduction__content p {
-  font-style: normal;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: #00356B;
   margin-bottom: 5rem;
+  font-family: Ubuntu;
 }
 
 .introduction__content__social {
