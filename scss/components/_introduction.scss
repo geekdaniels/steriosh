@@ -75,6 +75,15 @@
             align-items:center;
             margin-bottom:3rem;
 
+            a {
+                &.notice {
+                    color:$link_item;
+                    font-weight:800;
+                 }
+            }
+
+            
+
             @include respond(tab-port) {
                justify-content: space-between;
              }
@@ -86,17 +95,17 @@
                 font-weight:500;
 
                 &:hover {
-                  color:$main;
+                  color:$link_item;
                   font-weight:700;
                 }
 
                 &:hover + .introduction__links__item-icon,
                 &:hover + .introduction__links__item-icon::after {
-                    background-color:$main;
+                    background-color:$link_item;
                 }
 
                 &:hover + .introduction__links__item-icon .introduction__links__item-icon-circle  {
-                    background-color:$main;
+                    background-color:$link_item;
                 }
             }
 
@@ -116,6 +125,10 @@
                     border:4px solid $base;
                     border-radius:50%;
                     transition:all .2s;
+
+                    &.notice {
+                        background-color:$link_item;
+                     }
                 }
 
                 
