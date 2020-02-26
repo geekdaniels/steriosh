@@ -38,11 +38,19 @@
             margin-bottom:1rem;
         }
 
+        @include respond(misc2) {
+            padding-right:10rem;
+          }
+
         &__holder {
             width:100%;
             height:4rem;
             @include flexCenter;
             justify-content: flex-start;
+
+            @include respond(misc2) {
+                justify-content:center;
+              }
             
             img {
                width:auto;
@@ -58,11 +66,12 @@
 
             @include respond(misc2) {
                flex-direction:column;
+               justify-content: center;
+               align-content: center;
              }
 
             li {
                 flex-grow:1;
-                // background-color: yellowgreen;
 
                 &:not(:last-child) {
                    margin-right:2rem;

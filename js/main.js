@@ -1,11 +1,5 @@
 var index = 0; 
 
-// const activeIntroLink = document.querySelector(".introduction__links__item a");
-// activeIntroLink.parentElement
-//                 .nextElementSibling
-//                 .childNodes[1]
-//                 .className = "notice";
-
 
 
 const notice = () => {   
