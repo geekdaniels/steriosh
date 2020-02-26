@@ -422,6 +422,7 @@ li {
   color: #999999;
   font-size: 1rem;
   font-weight: 500;
+  margin-bottom: .5rem;
 }
 
 @media only screen and (max-width: 43.75em) {
@@ -558,8 +559,6 @@ li {
   top: -20rem;
   left: -5rem;
   width: 25rem;
-  -webkit-transition: all .2s;
-  transition: all .2s;
   visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +571,8 @@ li {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 1rem 2rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .footer__clients ul li .testimonial::before, .footer__clients ul li .testimonial::after {
@@ -579,13 +580,15 @@ li {
   position: absolute;
   width: 0;
   height: 0;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
-  left: 5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: -1rem;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #ffffff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .footer__clients ul li .testimonial__image {
@@ -630,7 +633,7 @@ li {
   display: -ms-flexbox;
   display: flex;
   background-color: #E5E5E5;
-  padding: 2rem;
+  padding: 1.7rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
