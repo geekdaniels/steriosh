@@ -52,6 +52,58 @@ body {
   line-height: 1.6;
 }
 
+@-webkit-keyframes moveIn {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scaleIn {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .ms {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -323,6 +375,12 @@ li {
 .introduction__links__item a.notice {
   color: rgba(183, 45, 45, 0.9);
   font-weight: 800;
+  -webkit-animation: scaleIn .5s ease-in;
+          animation: scaleIn .5s ease-in;
+}
+
+.introduction__links__item a.noticed {
+  color: #999999;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -343,6 +401,8 @@ li {
 
 .introduction__links__item a:hover {
   color: rgba(183, 45, 45, 0.9);
+  -webkit-animation: scaleIn .5s ease-in;
+          animation: scaleIn .5s ease-in;
   font-weight: 700;
 }
 
@@ -388,6 +448,10 @@ li {
   background-color: rgba(183, 45, 45, 0.9);
 }
 
+.introduction__links__item-icon-circle.noticed {
+  background-color: #999999;
+}
+
 .introduction__links__item-icon::after {
   content: "";
   position: absolute;
@@ -404,7 +468,7 @@ li {
 }
 
 .footer {
-  height: 20vh;
+  min-height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +623,6 @@ li {
   top: -20rem;
   left: -5rem;
   width: 25rem;
-  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,6 +636,7 @@ li {
   padding: 1rem 2rem;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  display: none;
 }
 
 .footer__clients ul li .testimonial::before, .footer__clients ul li .testimonial::after {
@@ -620,7 +684,9 @@ li {
 }
 
 .footer__clients ul li:hover .testimonial {
-  visibility: visible;
+  display: block;
+  -webkit-animation: moveIn .3s ease-in-out;
+          animation: moveIn .3s ease-in-out;
 }
 
 .footer__links {

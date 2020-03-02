@@ -1,5 +1,5 @@
 .footer {
-    height:20vh;
+    min-height:25vh;
     display: flex;
     margin:0;
 
@@ -97,12 +97,13 @@
                      top:-20rem;
                      left:-5rem;
                      width:25rem;
-                     visibility: hidden;
                      display:flex;
                      flex-direction:column;
                      align-items: flex-start;
                      padding:1rem 2rem;
                      transition:all .2s ease-in-out;
+                     
+                    display:none;
 
                     &::before,
                     &::after {
@@ -150,7 +151,9 @@
                  }
 
                  &:hover .testimonial {
-                     visibility: visible;
+                    //  visibility: visible;
+                    display:block;
+                    animation:moveIn .3s ease-in-out;
                  }
             }
         }

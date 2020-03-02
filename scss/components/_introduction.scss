@@ -26,7 +26,6 @@
         }
 
         p {
-            // font-style: normal;
             font-weight: 600;
             font-size: 1.8rem;
             line-height: 2.4rem;
@@ -82,6 +81,11 @@
                 &.notice {
                     color:$link_item;
                     font-weight:800;
+                    animation:scaleIn .5s ease-in;
+                 }
+
+                 &.noticed {
+                    color:#999999;
                  }
             }
 
@@ -99,6 +103,7 @@
 
                 &:hover {
                   color:$link_item;
+                  animation:scaleIn .5s ease-in;
                   font-weight:700;
                 }
 
@@ -131,6 +136,10 @@
 
                     &.notice {
                         background-color:$link_item;
+                     }
+
+                     &.noticed {
+                        background-color:#999999;
                      }
                 }
 
