@@ -1,4 +1,4 @@
-    var index = 0; 
+var index = 0; 
 const introLink = document.getElementsByClassName("introduction__links__item-link"); 
 const introIcon = document.getElementsByClassName("introduction__links__item-icon-circle");
 
@@ -29,7 +29,7 @@ const notice = () => {
 } 
 
 
-var executeNotice = setInterval(notice, 1000);
+var executeNotice = setInterval(notice, 2000);
 
 Object.values(introLink).forEach((linkItem) => {
      linkItem.addEventListener('mouseover',() => {
@@ -45,6 +45,6 @@ Object.values(introLink).forEach((linkItem) => {
 
 Object.values(introLink).forEach((linkItem,index) => {
   linkItem.addEventListener('mouseout',() => {
-   executeNotice =  setInterval(notice, 1000);
+   executeNotice =  setInterval(notice, 2000);
   })
 });
