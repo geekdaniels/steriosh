@@ -6,8 +6,17 @@
 @import "abstracts/util";
 
 @import "base/base";
+@import "base/basefooter";
+@import "base/navigation";
+
 @import "components/header";
 @import "components/introduction";
 @import "components/footer";
+
+
+
+@import "pages/contact";
+@import "pages/philosophy";
+@import "pages/services";
 
 

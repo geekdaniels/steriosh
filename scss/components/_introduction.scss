@@ -2,8 +2,8 @@
     display: flex;
     justify-content:space-between;
     align-items:center;
-    padding-top:7rem;
-    margin-top:7rem;
+    padding-top:5rem;
+    margin-top:5rem;
 
      @include respond(tab-port) {
       flex-wrap: wrap;

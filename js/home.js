@@ -1,26 +1,10 @@
- // Object.values(activeIntroLink).forEach((link,index) => {
-    //     if(link.classList.contains("notice")) {
-    //      link.classList.remove("notice");
-    //      link.parentElement.parentElement
-    //                           .nextElementSibling
-    //                           .childNodes[3].childNodes[1]
-    //                           .className = "introduction__links__item-icon-circle notice";
-    //         // console.log(link.parentElement.parentElement.nextElementSibling.childNodes[3].childNodes[1].classList);
-    //     }else {
-
-    //     }
-       
-    // });
-
-
-    var index = 0; 
+var index = 0; 
 const introLink = document.getElementsByClassName("introduction__links__item-link"); 
 const introIcon = document.getElementsByClassName("introduction__links__item-icon-circle");
 
 const notice = () => {   
-  const activeIntroLink = introLink[index]; 
-  const activeIntroIcon = introIcon[index];
-
+  var activeIntroLink = introLink[index]; 
+  var activeIntroIcon = introIcon[index];
 
   if(activeIntroIcon.parentElement.parentElement.nextElementSibling) {
       activeIntroLink.classList.remove("notice");
@@ -45,11 +29,22 @@ const notice = () => {
 } 
 
 
-var executeNotice = setInterval(notice, 1000);
+var executeNotice = setInterval(notice, 2000);
 
-Object.values(introLink).forEach((linkItem,index) => {
+Object.values(introLink).forEach((linkItem) => {
      linkItem.addEventListener('mouseover',() => {
-        clearInterval(executeNotice);
+       
+      clearInterval(executeNotice);
+      introLink[index].classList.remove("notice");
+      introIcon[index].classList.remove("notice");
+      introLink[index].className = "introduction__links__item-link noticed";
+      introIcon[index].className = "introduction__links__item-icon-circle noticed";
+
      })
 });
 
+Object.values(introLink).forEach((linkItem,index) => {
+  linkItem.addEventListener('mouseout',() => {
+   executeNotice =  setInterval(notice, 2000);
+  })
+});

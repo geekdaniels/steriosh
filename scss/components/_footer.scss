@@ -1,5 +1,5 @@
 .footer {
-    min-height:25vh;
+    min-height:18vh;
     display: flex;
     margin:0;
 
@@ -9,9 +9,10 @@
 
     p {
         color:$dark_grey;
-        font-size:1rem;
-        font-weight:500;
-        margin-bottom:.5rem;
+        font-size:1.2rem;
+        line-height:2.4rem;
+        font-weight:400;
+        // margin-bottom:.5rem;
 
         @include respond(misc2) {
             font-size:1.5rem;
