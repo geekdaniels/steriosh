@@ -228,7 +228,7 @@ body {
   background-color: #ffffff;
   padding-left: 10rem;
   padding-right: 10rem;
-  background-image: url("../../images/Ellipse 13.svg"), url("../../images/bigbg.svg");
+  background-image: url("../images/Ellipse 13.svg"), url("../images/bigbg.svg");
   background-repeat: no-repeat;
   background-size: 100% 25rem, 100% 45rem;
 }
