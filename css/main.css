@@ -1107,7 +1107,7 @@ li {
 .contact {
   height: 65vh;
   background-color: #EFF2F5;
-  background-image: url("../../images/Rectangle 112.jpg");
+  background-image: url("../images/Rectangle 112.jpg");
   background-repeat: no-repeat;
   background-position: 100% 0%;
   padding-left: 10rem;
@@ -1315,7 +1315,7 @@ li {
 
 .philosophy__image figure {
   width: 100%;
-  height: 85vh;
+  height: 75vh;
 }
 
 .philosophy__image figure img {
