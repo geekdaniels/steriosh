@@ -1,0 +1,154 @@
+.contact {
+    height:65vh;
+    background-color:#EFF2F5;
+    background-image:url("../../images/Rectangle\ 112.jpg");
+    background-repeat:no-repeat;
+    background-position: 100% 0%;
+    padding-left:10rem;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+
+    &__form {
+        height:39.4rem;
+        flex-basis:38%;
+        flex-basis:60.6rem;
+        padding:5rem;
+        background: rgba(0, 54, 107, 0.108);
+
+        h6 {
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__information {
+        height:39.4rem;
+        background-color:$link_blue;
+        flex-basis:20%;
+        padding:5rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        // flex-basis:22.1rem;
+
+        &__content {
+            display:flex;
+            flex-direction:column;
+            margin-top:2rem;
+
+            &-item {
+                display:flex;
+                margin-bottom:2rem;
+
+                p {
+                    font-family: 'Ubuntu', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+
+                figure {
+                    margin-right:2rem;
+                }
+            }
+        }
+
+        
+        &__footer {
+            justify-content: flex-end;
+
+            ul {
+                padding-left:4rem;
+                display:flex;
+                justify-content: space-between;
+                
+                li {
+
+                }
+            }
+        }
+        
+    }   
+}
+
+.form {
+    display: flex;
+    flex-wrap:wrap;
+
+    &__row {
+        flex-basis:100%;
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:1rem;
+
+        > * {
+            flex-basis:48%;
+            height:4.6rem;
+            margin-bottom:1.2rem;
+            outline:none;
+            border:none;
+            padding-left:1rem;
+
+            &::-webkit-input-placeholder {
+                color:$dark_grey;
+                padding-left:1rem;
+                font-family: 'Ubuntu', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &:focus {
+                outline:none;
+                padding-left:1rem;
+
+                &:invalid {
+                    border-bottom:3px solid orangered;
+                }
+            }
+
+        }
+
+        &-name { 
+        }
+
+        &-email {
+        }
+
+        &-submit {
+            outline:none;
+            border:none;
+            flex-basis:40%;
+
+            background:$main;
+            box-shadow: 0px 8px 32px rgba(0, 53, 107, 0.2);
+            border-radius: 50px;
+            color:$base;
+            font-weight: 500;
+            font-size: 1.8rem; 
+            transition:all .2s;
+    
+            &-blue {
+                background:$main;
+            }
+    
+            &:hover {
+                background-color:rgb(11, 37, 63);
+            } 
+        }
+
+        &-message {
+            flex-basis:100%;
+            height:8.9rem;
+            padding:1rem;
+
+            &::-webkit-input-placeholder {
+                color:$dark_grey;
+                padding-left:1rem;
+            }
+        }
+    }
+}

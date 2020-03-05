@@ -2,3 +2,87 @@
     margin-top:2rem;
     margin-bottom:2rem;
 }
+
+.heading {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5.4rem;
+    line-height: 6.2rem;
+
+    &-blue {
+        color: $main;
+    }
+
+    &-black {
+        color: #333333;
+    }
+
+    &-brown {
+        color:#666666;
+    }
+}
+
+.heading-2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+
+    &-blue {
+        color: $main;
+    }
+
+    &-black {
+        color: #333333;
+    }
+
+    &-brown {
+        color:#666666;
+    }
+}
+
+.heading-3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+
+    &-blue {
+        color: $main;
+    }
+
+    &-black {
+        color: #333333;
+    }
+
+    &-brown {
+        color:#666666;
+    }
+
+    &-white {
+        color: #FFFFFF;
+    }
+}
+
+.paragraph {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+
+    &-blue {
+        color: $main;
+    }
+
+    &-black {
+        color: #333333;
+    }
+
+    &-brown {
+        color:#666666;
+    }
+}

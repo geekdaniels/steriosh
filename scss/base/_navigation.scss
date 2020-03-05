@@ -1,0 +1,61 @@
+.navigation {
+    padding-left:10rem;
+    padding-right:10rem;
+    height:15vh;
+    background-color: $light_grey;
+    @include spaceCenter;
+
+    &__list {
+        @include spaceCenter;
+
+        li {
+            &:not(:last-child) {
+              margin-right:3.8rem;
+            }
+
+            figure {
+                width:12rem;
+                height:5rem;
+
+                img {
+                    width:100%;
+                    height:100%;
+                    object-fit: center;
+                }
+            }
+            
+            a {
+                color:$black;
+                font-size: 1.6rem;
+                font-family: 'Ubuntu', sans-serif;
+                font-style: normal;
+                font-weight:400;
+                line-height: 2.4rem;
+                transition:all .2s;
+
+
+                &.active,
+                &:hover {
+                     border-bottom:2px solid $main;
+                     padding-bottom:.7rem;
+                } 
+
+                &.btn {
+                    background:$brown;
+                    border-radius: 50px;
+                    padding:1rem 3rem 1rem 3rem;;
+                    color:$base;
+                    font-weight: 500;
+                    font-size: 1.8rem;
+                    transition:all .2s;
+
+                    &:hover {
+                        border:0;
+                        background-color:rgba(0, 53, 107, 0.7);
+                        box-shadow: 0px 8px 32px rgba(0, 53, 107, 0.2);
+                    }
+                }
+            }                           
+        }
+     }
+}

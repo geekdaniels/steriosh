@@ -2,7 +2,7 @@
     display:flex;
     justify-content:space-between;
     align-items: center;
-    padding-top:3rem;
+    padding-top:3.4rem;
 
 
     &__icon {
@@ -25,13 +25,21 @@
                  align-items: center;
 
                  li {
-                    padding-left:2rem;
+                    // padding-left:2rem;
                     line-height:2.4rem;
+
+                    &:first-child {
+                        margin-right:3.8rem;
+                    }
 
                     
                     a {
                         color:$black;
                         font-size: 1.6rem;
+                        font-family: 'Ubuntu', sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 2.4rem;
                         transition:all .2s;
 
                         &.btn {
@@ -50,8 +58,10 @@
                         }
 
                         &:hover {
-                            // box-shadow: 3px 8px 32px rgba(0, 53, 107, 0.2);
-                             text-shadow: 0rem 0rem 3rem rgba(1, 53, 107, 0.2);
+                             border-bottom:2px solid $main;
+                             padding-bottom:.7rem;
+                            //  box-shadow: 3px 8px 32px rgba(0, 53, 107, 0.2);
+                             //text-shadow: 1rem 2rem 3rem rgba(1, 53, 107, 0.2);
                         } 
                 }                           
         }

@@ -46,6 +46,10 @@ li {
         font-size: 1.8rem; 
         transition:all .2s;
 
+        &-blue {
+            background:$main;
+        }
+
         &:hover {
             background-color:rgb(11, 37, 63);
         } 

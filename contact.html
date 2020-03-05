@@ -10,7 +10,153 @@
   <title>Steroish ¬ Contact</title>
 </head>
 <body>
-  <main></main>   
+  <main>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <!-- <li>
+          <figure>
+             <img src="images/steriospng.png" alt="steriosh logo" />
+          </figure>
+        </li> -->
+
+        <li>
+          <figure>
+            <a href="index.html">
+                <img src="images/steriospng.png" alt="steriosh logo" />
+            </a>
+          </figure>
+        </li>
+
+          <li>
+            <a href="philosophy.html">Our Philosophy</a>
+         </li>
+
+          <li>
+            <a  href="services.html">Our Services</a>
+          </li>
+      </ul>
+
+      <ul class="navigation__list">
+        <li>
+            <a class="btn" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+  </nav>
+  <section class="contact">
+      <div class="contact__form">
+          <h6 class="heading-3 heading-3-black">Your Contact Information</h6>
+          <form class="form" method="POST" action="#">
+              <div class="form__row">
+                <input type="text"  
+                       class="form__row-name" 
+                       name="fullname"
+                       placeholder="Full Name" required>
+                
+                <input type="email" 
+                       class="form__row-email" 
+                       name="email"
+                       placeholder="Email" required>
+              </div>
+              <div class="form__row">
+                <textarea class="form__row-message"
+                        name="message"  required >
+                </textarea>
+              </div>
+              <div class="form__row">
+                <input class="form__row-submit" type="submit" value="Send Message"/>
+              </div>
+          </form>
+      </div>
+      <div class="contact__information">
+          <h6 class="heading-3 heading-3-white">Contact Information</h6>
+          <div class="contact__information__content">
+
+            <div class="contact__information__content-item">
+              <figure>
+                <img src="images/white/mail.svg"/>
+              </figure>
+              <p>contact@steriosh.com</p>
+            </div>
+
+            <div class="contact__information__content-item">
+                <figure>
+                  <img src="images/white/map-pin.svg"/>
+                </figure>
+                <p>
+                  4934 Rolling Green Rd undefined Jackson,
+                  Kentucky 48144 United States
+                </p>
+              </div>
+
+            </div>
+          <div class="contact__information__footer">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="images/white/twitter.svg">
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <img src="images/white//instagram.svg">
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <img src="images/white/facebook.svg">
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <img src="images/white/linkedin.svg">
+                    </a>
+                  </li>
+                </ul>
+          </div>
+      </div>
+  </section>
+  <footer class="mainfooter">
+    <div class="mainfooter__links">
+        <div class="mainfooter__links__website">
+          <h6>WEBSITE</h6>
+          <ul>
+                <li >
+                  <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li >
+                    <a class="nav__link" href="philosophy.html">Our Philosophy</a>
+                </li>
+                <li >
+                  <a class="nav__link" href="services.html">Services</a>
+              </li>
+              <li >
+                  <a class="nav__link" href="services.html#team">Our Team</a>
+              </li>
+          </ul>
+        </div>
+        <div class="mainfooter__links__contact">
+            <h6>CONTACT US</h6>
+            <p>Email:</p>
+            <p>hello@steriosh.com</p>
+            <p>Phone:</p>
+            <p>+234 123 456 7890</p>
+        </div>
+        <div class="mainfooter__links__terms">
+
+          <div class="mainfooter__links__terms-item">
+            <a href="#">Terms And Conditions</a>
+            <a href="#"> Privacy</a>
+          </div>
+          
+          <p>Copyrights &copy; 2020</p>
+        </div>
+
+      </div>
+    </footer>
+  </main>   
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
