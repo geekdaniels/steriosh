@@ -5,12 +5,22 @@
     background-color: $light_grey;
     @include spaceCenter;
 
+    @include respond(phone) {
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+
     &__list {
         @include spaceCenter;
 
         li {
             &:not(:last-child) {
               margin-right:3.8rem;
+
+              @include respond(phone) {
+                margin-right:1.5rem;
+               }
+        
             }
 
             figure {

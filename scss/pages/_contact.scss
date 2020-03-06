@@ -1,5 +1,5 @@
 .contact {
-    height:65vh;
+    min-height:51rem;
     background-color:#EFF2F5;
     background-image:url("../images/Rectangle\ 112.jpg");
     background-repeat:no-repeat;
@@ -9,12 +9,28 @@
     justify-content:flex-start;
     align-items:center;
 
+    @media only screen and (max-width:50rem) {
+        flex-wrap:wrap;
+        padding-left:0;
+    }
+
     &__form {
         height:39.4rem;
         flex-basis:38%;
         flex-basis:60.6rem;
         padding:5rem;
         background: rgba(0, 54, 107, 0.108);
+
+        @include respond(tab-port) {
+            flex-basis:60%;
+         }
+
+         @media only screen and (max-width:50rem) {
+            flex-basis:100%;
+            margin-bottom:3rem;
+        }
+
+        
 
         h6 {
             padding-bottom: 2rem;
@@ -31,10 +47,20 @@
         justify-content:space-between;
         // flex-basis:22.1rem;
 
+        @include respond(tab-port) {
+            flex-basis:40%;
+         }
+
+         @media only screen and (max-width:50rem) {
+            flex-basis:100%;
+        }
+
         &__content {
             display:flex;
             flex-direction:column;
             margin-top:2rem;
+
+           
 
             &-item {
                 display:flex;
@@ -83,6 +109,11 @@
         justify-content:space-between;
         margin-bottom:1rem;
 
+
+        @include respond(phone) {
+            flex-wrap:wrap;
+         }
+
         > * {
             flex-basis:48%;
             height:4.6rem;
@@ -90,6 +121,10 @@
             outline:none;
             border:none;
             padding-left:1rem;
+
+            @include respond(phone) {
+                flex-basis:100%;
+             }
 
             &::-webkit-input-placeholder {
                 color:$dark_grey;
@@ -130,7 +165,8 @@
             font-weight: 500;
             font-size: 1.8rem; 
             transition:all .2s;
-    
+
+            
             &-blue {
                 background:$main;
             }
