@@ -100,3 +100,47 @@
        // }
    }
 }
+
+<section class="projects">
+  <h2 class="heading-2 heading-2-black">Projects</h2>
+  <p class="paragraph paragraph-brown">   
+      Voluptate laboris duis ipsum enim veniam sint nostrud reprehenderit. 
+      Eiusmod irure commodo ex dolor elit ut qui duis magna dolore in nostrud 
+      incididunt quis.
+  </p>
+  
+  <!-- <div class="projects__container"> -->
+      <div class="projects__gallery">
+        <div class="projects__gallery--item">
+          <figure>
+            <img src="images/Rectangle 103.jpg" alt="philosophy__image"/>
+          </figure>
+
+          
+          <figure>
+            <img src="images/Rectangle 104.jpg" alt="philosophy__image"/>
+          </figure>
+         
+        </div>
+
+        <div class="projects__gallery--item">
+          <figure>
+            <img src="images/Rectangle 106.jpg" alt="philosophy__image"/>
+          </figure>
+
+          <figure>
+            <img src="images/Rectangle 105.jpg" alt="philosophy__image"/>
+          </figure>
+        </div>
+
+        <div class="projects__gallery--item">
+          
+          <figure>
+            <img src="images/Rectangle 107.jpg" alt="philosophy__image"/>
+          </figure>
+          <figure>
+            <img src="images/Rectangle 108.jpg" alt="philosophy__image"/>
+          </figure>
+        </div>
+    </div>
+    </section>

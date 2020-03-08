@@ -490,6 +490,7 @@ li {
   .navigation {
     padding-left: 3rem;
     padding-right: 3rem;
+    height: 12vh;
   }
 }
 
@@ -1713,11 +1714,61 @@ li {
   -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   padding: 10rem 15rem;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
 }
 
 .features h2 {
   padding-bottom: 2rem;
+}
+
+.pro {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pro h2, .pro p {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .pro h2, .pro p {
+    width: 70%;
+    margin: 1rem auto;
+  }
+}
+
+.pro__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 15rem;
+}
+
+.pro__gallery--item {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.pro__gallery--item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.pro__gallery--item figure {
+  margin-bottom: 1rem;
+}
+
+.pro__gallery--item figure img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: center;
+     object-fit: center;
 }
 
 .projects {
@@ -1755,6 +1806,8 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 85%;
+    margin: 3rem auto;
   }
 }
 
@@ -1771,5 +1824,21 @@ li {
 
 .projects__gallery--item figure {
   padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .projects__gallery--item figure {
+    width: 20rem;
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .projects__gallery--item figure img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: center;
+       object-fit: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

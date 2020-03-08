@@ -53,13 +53,56 @@
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(50rem,1fr));
     padding:10rem 15rem;
-    grid-gap:2rem;
+    grid-gap:4rem;
+
+    // @include respond(phone) {
+    //     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    //   }
 
     h2 {
         padding-bottom: 2rem;
     }
 }
+.pro {
+    text-align:center;
+    padding-top:3rem;
+    padding-bottom:3rem;
 
+    h2,p {
+        padding-bottom:2rem;
+
+        @include respond(tab-port) {
+            width:70%;
+            margin:1rem auto;
+         }
+    };
+
+    &__gallery {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding:2rem 15rem;
+
+        &--item {
+            flex-basis:30%;
+
+            &:not(:last-child) {
+                margin-right:1rem;
+            }
+
+            figure {
+                margin-bottom:1rem;
+
+                img {
+                    width:100%;
+                    height: auto;
+                    object-fit:center;
+                }
+            }
+        }
+    }
+
+}
 .projects {
     text-align:center;
     @include flexCenter;
@@ -70,12 +113,16 @@
         padding-bottom:2rem;
     };
 
+
+
     &__gallery {
         display: flex;
         width:80%;
 
         @include respond(tab-port) {
            flex-direction:column;
+           width:85%;
+           margin:3rem auto;
         }
 
 
@@ -86,6 +133,20 @@
 
             figure {
                 padding-bottom:2rem;
+                
+                @include respond(tab-port) {
+                    width:20rem;
+                    height:10rem;
+                 }
+
+
+                img {
+                    @include respond(tab-port) {
+                       width:100%;
+                       height: 100%;
+                       object-fit:center;
+                     }
+                }
             }
         }
     }
