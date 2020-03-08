@@ -10,6 +10,7 @@
 
         
         @include respond(misc2) {
+            width:90%;
             padding-top:3rem;
             padding-bottom:3rem;
             flex-wrap:wrap;

@@ -34,7 +34,7 @@
 
                     
                     a {
-                        color:$black;
+                        color:$main;
                         font-size: 1.6rem;
                         font-family: 'Ubuntu', sans-serif;
                         font-style: normal;
@@ -45,7 +45,7 @@
                         &.btn {
                             background:$brown;
                             border-radius: 50px;
-                            padding:1rem 3rem 1rem 3rem;;
+                            padding:1rem 3rem 1rem 3rem;
                             color:$base;
                             font-weight: 500;
                             font-size: 1.8rem;
@@ -59,7 +59,7 @@
 
                         &:hover {
                              border-bottom:2px solid $main;
-                             padding-bottom:.7rem;
+                             padding-bottom:1rem;
                             //  box-shadow: 3px 8px 32px rgba(0, 53, 107, 0.2);
                              //text-shadow: 1rem 2rem 3rem rgba(1, 53, 107, 0.2);
                         } 

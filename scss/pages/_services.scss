@@ -74,6 +74,11 @@
         display: flex;
         width:80%;
 
+        @include respond(tab-port) {
+           flex-direction:column;
+        }
+
+
         &--item {
             display: flex;
             flex-direction: column;

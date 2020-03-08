@@ -35,7 +35,7 @@
             }
             
             a {
-                color:$black;
+                color:$main;
                 font-size: 1.6rem;
                 font-family: 'Ubuntu', sans-serif;
                 font-style: normal;
@@ -53,7 +53,7 @@
                 &.active,
                 &:hover {
                      border-bottom:2px solid $main;
-                     padding-bottom:.7rem;
+                     padding-bottom:1rem;
                 } 
 
                 &.btn {

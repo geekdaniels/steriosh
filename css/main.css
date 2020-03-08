@@ -333,6 +333,7 @@ li {
 
 @media only screen and (max-width: 43.75em) {
   .basefooter ul {
+    width: 90%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     -ms-flex-wrap: wrap;
@@ -527,7 +528,7 @@ li {
 }
 
 .navigation__list li a {
-  color: #000000;
+  color: #00356B;
   font-size: 1.6rem;
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
@@ -543,7 +544,7 @@ li {
 
 .navigation__list li a.active, .navigation__list li a:hover {
   border-bottom: 2px solid #00356B;
-  padding-bottom: .7rem;
+  padding-bottom: 1rem;
 }
 
 .navigation__list li a.btn {
@@ -612,7 +613,7 @@ li {
 }
 
 .header__nav__list li a {
-  color: #000000;
+  color: #00356B;
   font-size: 1.6rem;
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
@@ -641,7 +642,7 @@ li {
 
 .header__nav__list li a:hover {
   border-bottom: 2px solid #00356B;
-  padding-bottom: .7rem;
+  padding-bottom: 1rem;
 }
 
 .introduction {
@@ -1455,28 +1456,44 @@ li {
 }
 
 .vision {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   margin-top: 7rem;
   margin-bottom: 10rem;
-  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .vision {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.vision__image {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 @media only screen and (max-width: 56.25em) {
-  .vision {
-    -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  .vision__image {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
 .vision__image figure {
   width: 80%;
-  height: 60%;
+  height: auto;
 }
 
 .vision__image figure img {
@@ -1484,6 +1501,28 @@ li {
   height: 100%;
   -o-object-fit: center;
      object-fit: center;
+}
+
+.vision__container {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  row-gap: 4rem;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .vision__container {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 2rem 5rem;
+  }
 }
 
 .vision__content {
@@ -1579,6 +1618,15 @@ li {
 .team__gallery figure img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.phead {
+  font-family: Ubuntu,"Sans Serrif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #333333;
 }
 
 .services {
@@ -1699,6 +1747,15 @@ li {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .projects__gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .projects__gallery--item {
