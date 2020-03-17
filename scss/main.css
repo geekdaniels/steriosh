@@ -704,6 +704,7 @@ li {
   color: #00356B;
   margin-bottom: 5rem;
   font-family: Ubuntu;
+  font-size: 2.5rem;
 }
 
 .introduction__content__social {
@@ -774,8 +775,10 @@ li {
 
 .introduction__links__item a.notice {
   color: #00356B;
+/*
   -webkit-animation: scaleIn 0.7s ease-in;
   animation: scaleIn 0.7s ease-in;
+*/
 }
 
 .introduction__links__item a.noticed {

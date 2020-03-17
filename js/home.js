@@ -1,4 +1,4 @@
-var index = 0; 
+var index = 4;
 const introLink = document.getElementsByClassName("introduction__links__item-link"); 
 const introIcon = document.getElementsByClassName("introduction__links__item-icon-circle");
 
