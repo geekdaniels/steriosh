@@ -378,6 +378,16 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  color: #999999;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+.mainfooter__links h6 {
+  font-size: 1.4rem;
+  line-height: 18px;
+  color: #000000 !important;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -399,9 +409,9 @@ li {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.4rem;
   line-height: 18px;
-  color: #000000;
+  color: #000000 !important;
 }
 
 .mainfooter__links__website ul li a {
@@ -775,10 +785,10 @@ li {
 
 .introduction__links__item a.notice {
   color: #00356B;
-/*
+  /*
   -webkit-animation: scaleIn 0.7s ease-in;
   animation: scaleIn 0.7s ease-in;
-*/
+  */
 }
 
 .introduction__links__item a.noticed {
@@ -1108,6 +1118,10 @@ li {
   margin-top: 2rem;
 }
 
+.copyright {
+  margin-top: 25px;
+}
+
 @media only screen and (max-width: 43.75em) {
   .footer__links {
     -webkit-box-align: center;
@@ -1126,20 +1140,20 @@ li {
 }
 
 @media only screen and (max-width: 43.75em) {
-  .footer__links__website {
+  .footer__links__website, .footer__links__contact {
     text-align: center;
     margin-bottom: 1rem;
   }
 }
 
-.footer__links__website ul li a {
+.footer__links__website ul li a, .footer__links__contact ul li a, .footer__links__terms ul li a {
   color: #999999;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 @media only screen and (max-width: 43.75em) {
-  .footer__links__website ul li a {
+  .footer__links__website ul li a, .footer__links__contact ul li a, .footer__links__terms ul li a {
     font-size: 1.5rem;
   }
 }
@@ -1163,7 +1177,7 @@ li {
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
-  color: #666666;
+  color: #999;
 }
 
 @media only screen and (max-width: 43.75em) {
