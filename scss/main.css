@@ -20,13 +20,13 @@ html {
 
 @media only screen and (min-width: 112.5em) {
   html {
-    font-size: 75%;
+    font-size: 100%;
   }
 }
 
 @media only screen and (max-width: 75em) {
   html {
-    font-size: 56.25%;
+    font-size: 100%;
   }
 }
 
@@ -49,13 +49,13 @@ body {
 
 @media only screen and (min-width: 112.5em) {
   body {
-    font-size: 75%;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (max-width: 75em) {
   body {
-    font-size: 56.25%;
+    font-size: 80%;
   }
 }
 
@@ -112,7 +112,7 @@ body {
   0% {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
@@ -125,7 +125,7 @@ body {
   0% {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
@@ -443,6 +443,7 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1100,6 +1101,10 @@ li {
   justify-content: space-between;
 }
 
+.footer__links__terms {
+  margin-top: 2rem;
+}
+
 @media only screen and (max-width: 43.75em) {
   .footer__links {
     -webkit-box-align: center;
@@ -1146,9 +1151,6 @@ li {
 .footer__links__contact h6 {
   font-family: Ubuntu;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
   color: #000000;
 }
 
@@ -1164,6 +1166,7 @@ li {
 @media only screen and (max-width: 43.75em) {
   .footer__links__terms {
     text-align: center;
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
 }
