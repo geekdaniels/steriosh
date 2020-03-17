@@ -210,8 +210,8 @@ body {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  /*  line-height: 22px;*/
 }
 
 .paragraph-blue {
@@ -1407,8 +1407,9 @@ li {
 .philosophy {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  /*  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];*/
+  /*  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));*/
+  grid-template-columns: 3fr 2fr;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1424,7 +1425,7 @@ li {
   align-self: center;
   -ms-grid-column-align: center;
   justify-self: center;
-  width: 60%;
+  width: 73%;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1667,7 +1668,7 @@ li {
   font-family: Ubuntu, "Sans Serrif";
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 37px;
   color: #333333;
 }
