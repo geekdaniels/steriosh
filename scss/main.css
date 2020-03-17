@@ -561,9 +561,9 @@ li {
 }
 
 .navigation__list li a.active {
-  /*  border-bottom: 2px solid #00356B;*/
+  border-bottom: 2px solid #00356B;
   padding-bottom: 1rem;
-  background-color: #00356B !important;
+  /*  background-color: #00356B !important;*/
 }
 
 .navigation__list li a.btn {
@@ -577,12 +577,18 @@ li {
   transition: all .2s;
 }
 
+
 .navigation__list li a.btn:hover {
   border: 0;
   background-color: rgba(0, 53, 107, 0.7);
   background-color: #00356B;
   -webkit-box-shadow: 0px 8px 32px rgba(0, 53, 107, 0.2);
   box-shadow: 0px 8px 32px rgba(0, 53, 107, 0.2);
+}
+
+.navigation__list li button.active {
+  background-color: #00356B;
+  border: 0;
 }
 
 .header {
